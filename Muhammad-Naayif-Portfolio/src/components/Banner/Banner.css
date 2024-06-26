@@ -1,0 +1,46 @@
+@import '../../variables.css';
+
+.banner-section{
+    background-color: rgba(255, 255, 255, 0.033);
+    color: var(--text-primary);
+    font-family: var(--font-primary);
+    height: 100%;
+}
+
+.welcome-msg{
+    font-family: var(--font-bold);
+    font-size: 150px;
+    line-height: 60%;
+    font-variant-caps:all-petite-caps;
+}
+
+.intro-text{
+    font-size: small;
+    text-wrap: true;
+}
+.hero-name{
+    color: var(--text-secondary);
+    font-weight: bold;
+}
+
+.banner-section .description-section p{
+    color: rgb(189, 189, 189);    
+}
+
+.banner-section .description-section .read-more-btn{
+    color: var(--text-secondary);
+
+}
+.banner-section .description-section .read-more-btn:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.image-container{
+    height: 100%;
+    display: 'flex'; 
+    align-items: 'center';
+}
+
+.invisible{
+    color: transparent !important;
+}

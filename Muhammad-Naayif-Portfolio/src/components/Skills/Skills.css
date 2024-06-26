@@ -1,0 +1,8 @@
+@import '../../variables.css';
+
+
+
+.skills-section{
+    background-color: var(--secondary-section-background-color);
+    color: white;
+}
