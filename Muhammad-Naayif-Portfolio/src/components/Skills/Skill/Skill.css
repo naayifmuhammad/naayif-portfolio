@@ -1,0 +1,19 @@
+.round-image-container{
+    width: 200px;
+    height: auto;
+}
+.skill-container img{
+
+}
+.skill-container h1{
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.skill-container p{
+    font-size: 14px;
+}
+
+.badge-light{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20%;
+}

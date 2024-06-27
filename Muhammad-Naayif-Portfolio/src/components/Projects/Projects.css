@@ -2,15 +2,15 @@
 
 
 
-.skills-section{
-    background-color: var(--secondary-section-background-color);
+.projects-section{
+    background-color: var(--primary-section-background-color);
     color: white;
     cursor: pointer;
 }
-.skills-section .skills-header-container{
+.projects-section .projects-header-container{
     text-align: center;
 }
-.skills-section .skills-header-container h1{
+.projects-section .projects-header-container h1{
     color: var(--text-primary);
     font-family: var(--font-primary);
     font-size: 50px;

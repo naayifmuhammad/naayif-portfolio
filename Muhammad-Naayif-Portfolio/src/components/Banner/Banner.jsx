@@ -19,7 +19,7 @@ const toggleReadMore = ()=>{
         <Container>
             <Row className='align-items-center'>
                 <Col xl={7} className='bannerText' >
-                <Row className=''>
+                <Row className='mt-5'>
                     <h1 className='welcome-msg'>Welcome to my portfolio</h1>
                 </Row>
                 <Row  className='intro-text pt-3'>
