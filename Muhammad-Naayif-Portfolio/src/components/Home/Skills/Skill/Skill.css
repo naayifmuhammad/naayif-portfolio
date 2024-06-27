@@ -1,9 +1,8 @@
+@import '../../../../variables.css';
+
 .round-image-container{
     width: 200px;
     height: auto;
-}
-.skill-container img{
-
 }
 .skill-container h1{
     font-size: 30px;

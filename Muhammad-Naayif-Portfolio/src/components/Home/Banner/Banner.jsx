@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/esm/Container'
 import {Row, Col, Image} from 'react-bootstrap'
 import './Banner.css'
 import { useState } from 'react'
-import heroImage from '../../assets/profile/cover.png'
+import heroImage from '../../../assets/profile/cover.png'
 
 
 const Banner = (props) => {

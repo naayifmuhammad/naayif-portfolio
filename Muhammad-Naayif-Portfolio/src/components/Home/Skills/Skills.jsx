@@ -6,22 +6,22 @@ import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
 import Skill from "./Skill/Skill";
 
-import reactLogo from "../../assets/icons/skill-icons/react-logo.png";
-import djangoLogo from "../../assets/icons/skill-icons/django-logo.png";
-import unityLogo from "../../assets/icons/skill-icons/unity-logo.png";
-import expressLogo from "../../assets/icons/skill-icons/node-express-logo.png";
-import pyqtLogo from "../../assets/icons/skill-icons/pyqt-logo.png";
+import reactLogo from "../../../assets/icons/skill-icons/react-logo.png";
+import djangoLogo from "../../../assets/icons/skill-icons/django-logo.png";
+import unityLogo from "../../../assets/icons/skill-icons/unity-logo.png";
+import expressLogo from "../../../assets/icons/skill-icons/node-express-logo.png";
+import pyqtLogo from "../../../assets/icons/skill-icons/pyqt-logo.png";
 
-import htmlLogo from "../../assets/icons/skill-icons/html-logo.png";
-import cssLogo from "../../assets/icons/skill-icons/css-logo.png";
-import jsLogo from "../../assets/icons/skill-icons/js-logo.png";
-import mysqlLogo from "../../assets/icons/skill-icons/mysql-logo.png";
-import sqliteLogo from "../../assets/icons/skill-icons/sqlite-logo.png";
+import htmlLogo from "../../../assets/icons/skill-icons/html-logo.png";
+import cssLogo from "../../../assets/icons/skill-icons/css-logo.png";
+import jsLogo from "../../../assets/icons/skill-icons/js-logo.png";
+import mysqlLogo from "../../../assets/icons/skill-icons/mysql-logo.png";
+import sqliteLogo from "../../../assets/icons/skill-icons/sqlite-logo.png";
 
-import pythonLogo from "../../assets/icons/skill-icons/Python-logo.png";
-import phpLogo from "../../assets/icons/skill-icons/php-logo.png";
-import csharpLogo from "../../assets/icons/skill-icons/csharp-logo.png";
-import ajaxLogo from "../../assets/icons/skill-icons/ajax-logo.png";
+import pythonLogo from "../../../assets/icons/skill-icons/Python-logo.png";
+import phpLogo from "../../../assets/icons/skill-icons/php-logo.png";
+import csharpLogo from "../../../assets/icons/skill-icons/csharp-logo.png";
+import ajaxLogo from "../../../assets/icons/skill-icons/ajax-logo.png";
 
 const Skills = () => {
   const responsive = {
