@@ -1,0 +1,8 @@
+.slideshow-container{
+    background-color: transparent;
+}
+.slideshow-container .slide .custom-image-class{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}

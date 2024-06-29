@@ -1,0 +1,24 @@
+@import '../../../variables.css';
+
+
+.project-details{
+    font-family: var(--font-primary);
+    color: var(--text-primary);
+}
+
+.secondary{
+    background-color: var(--primary-section-background-color);
+}
+
+
+.project-details .project-title-container .project-title{
+    text-transform: capitalize;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    
+}
+.project-details .project-text-container{
+    height: 100%;
+}

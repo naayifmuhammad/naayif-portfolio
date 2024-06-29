@@ -1,44 +1,41 @@
 import React from 'react'
-import {Row,Col,Image} from 'react-bootstrap'
-import Carousel from 'react-multi-carousel';
+import { useEffect,useState } from 'react'
+import {Row,Image} from 'react-bootstrap'
 import './Projects.css'
+import Project from './Project/Project'
+import projects from './ProjectList'
 
 const Projects = () => {
-    const responsive = {
-        superLargeDesktop: {
-          breakpoint: { max: 4000, min: 3000 },
-          items: 5,
-        },
-        desktop: {
-          breakpoint: { max: 3000, min: 1024 },
-          items: 5,
-        },
-        tablet: {
-          breakpoint: { max: 1024, min: 464 },
-          items: 2,
-        },
-        mobile: {
-          breakpoint: { max: 464, min: 0 },
-          items: 2,
-        },
-      };
-    
+  const [windowSize, setWindowSize] = useState(window.innerWidth);
+
+  useEffect(() => {
+    console.log(isMobile)
+    const handleResize = () => {
+      setWindowSize(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const isMobile = windowSize < 992;  
+
+
       return (
-        <section className="projects-section py-3" id="projects">
-          <Row className="projects-header-container">
+        <>
+        <div className="projects-section col-12 py-4" id="projects">
+          <Row xs={12} className="projects-header-container">
             <h1 className="section-header-projects">Projects</h1>
           </Row>
-          <Row>
-            <Carousel responsive={responsive} autoPlay autoPlaySpeed={3500} keyBoardControl focusOnSelect infinite>              
-                <h1 className="header1">first test</h1>
-                <h1 className="header1">first test</h1>
-                <h1 className="header1">first test</h1>
-                <h1 className="header1">first test</h1>
-                <h1 className="header1">first test</h1>
-                <h1 className="header1">first test</h1>
-            </Carousel>
-          </Row>
-        </section>
+        </div>
+
+        {projects.map((project,index) =>(
+          <Project odd={index % 2 === 0 && !isMobile ? false : true} imageUrls={project.imageUrls} projectTitle={project.projectTitle} projectDescription={project.projectDescription}/>
+        ))}
+        </>
       );
 }
 
