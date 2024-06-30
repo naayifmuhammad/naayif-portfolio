@@ -2,7 +2,7 @@
 
 .popup-container{
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.642);
+    background-color: rgba(0, 0, 0, 0.684);
     top: 0;
     left: 0;
     width: 100vw;
@@ -10,14 +10,37 @@
     z-index: 1000;
 }
 
-.popup-container .popup-close-btn{
+
+.popup-container .contact-form .popup-close-btn{
     text-decoration: none;
-    color: grey;
+    color: rgb(255, 255, 255);
     cursor: pointer;
     text-align: right;
     font-size: 20px;
     font-weight: bold;
 }
+
+.popup-container .contact-form ::placeholder{
+  color: white;
+
+}
+
+.popup-container .contact-form .form-field-dark{
+  background-color: #00000047; /* Dark background color */
+  color: #fff; /* Light text color */
+  border: 1px solid #555; /* Border color */
+  padding: 10px;
+  border-radius: 4px;
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+  margin-bottom: 10px;
+    /* Add some space between inputs */
+}
+
+.popup-container .contact-form label{
+  color: white;
+}
+
 .popup-container .status-msg{
     text-align: center;
 }
@@ -29,13 +52,14 @@
 }
 
 
-.contact-form {
+.popup-container .contact-form {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     padding: 20px;
     border-radius: 1px;
-    background: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+    background: linear-gradient(109.6deg, rgb(28, 1, 59) 13.4%, rgb(44, 1, 20) 100.2%);
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
@@ -78,3 +102,8 @@
     background-color: #0056b3;
   }
   
+  .popup-container .contact-form .contact-form-header{
+    color: white;
+    text-align: center;
+    font-family: var(--font-primary);
+  }

@@ -50,15 +50,16 @@ export const Popup = (props) => {
 
   return (
    <div className="popup-container d-flex justify-content-center align-items-center col-12">
-    <form ref={popUpRef} onSubmit={sendEmail} className="contact-form col-lg-4 ">
-    <a className='popup-close-btn' onClick={props.handlePopup}> &times;</a>
-    <label>Name</label>
-    <input type="text" name="user_name" />
-    <label>Email</label>
-    <input type="email" name="user_email" />
-    <label>Message</label>
-    <textarea name="message" />
-    <input type="submit" value="Send" />
+    <form ref={popUpRef} onSubmit={sendEmail} className="contact-form col-lg-4 py-2 pb-5 ">
+    <a className='popup-close-btn pb-5' onClick={props.handlePopup}> &times;</a>
+    <h1 className="contact-form-header pb-3">What can I help you with?</h1>
+    {/* <label className='form-label-dark' >Name</label> */}
+    <input className='form-field-dark' placeholder='Name'  type="text" name="user_name" />
+    {/* <label className='form-label-dark' >Email</label> */}
+    <input className='form-field-dark'  placeholder='Enter your email' type="email" name="user_email" />
+    {/* <label className='form-label-dark' >Message</label> */}
+    <textarea className='form-field-dark' placeholder='Message' name="message" />
+    <input className='form-submit-btn-dark' type="submit" value="Send" />
     <span className={`status-msg pt-3 ${msgColor}`}>{statusMsg}</span>
     </form>
    </div>
