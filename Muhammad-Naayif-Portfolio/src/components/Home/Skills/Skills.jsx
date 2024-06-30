@@ -35,16 +35,24 @@ const Skills = () => {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      items: 3,
+    },
+    lMobile: {
+      breakpoint: { max: 800, min: 0 },
+      items: 3,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 600, min: 0 },
       items: 2,
+    },
+    xsMobile: {
+      breakpoint: { max: 400, min: 0 },
+      items: 1,
     },
   };
 
   return (
-    <section className="skills-section py-3" id="skills">
+    <section className="skills-section py-3 col-12" id="skills">
       <Row className="skills-header-container">
         <h1 className="section-header-skills">Skills</h1>
       </Row>

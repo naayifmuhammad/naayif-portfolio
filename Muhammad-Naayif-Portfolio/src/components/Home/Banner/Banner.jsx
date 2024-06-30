@@ -2,11 +2,30 @@ import React from 'react'
 import Container from 'react-bootstrap/esm/Container'
 import {Row, Col, Image} from 'react-bootstrap'
 import './Banner.css'
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import heroImage from '../../../assets/profile/cover.png'
 
 
 const Banner = (props) => {
+
+const desktopFontSize = 150 + "px";
+const mobileFontsize = 100 + "px";
+const [windowSize, setWindowSize] = useState(window.innerWidth)
+
+useEffect(()=>{
+    
+    const handleResize = () => {
+        setWindowSize(window.innerWidth)
+        document.getElementById('welcome-msg').style.fontSize = windowSize > 500 ? desktopFontSize : mobileFontsize
+        console.log("here")
+    }
+
+    window.addEventListener('resize', handleResize);
+      
+    return () => {
+        window.removeEventListener('resize',handleResize)
+    } 
+},[windowSize])
 
 const [open, setOpen] = useState(false)
 
@@ -15,15 +34,15 @@ const toggleReadMore = ()=>{
 };
 
   return (
-    <section id="banner" className='banner-section'>
+    <section id="banner" className='banner-section col-12'>
         <Container>
             <Row className='align-items-center'>
                 <Col xl={7} className='bannerText' >
                 <Row className='mt-5'>
-                    <h1 className='welcome-msg'>Welcome to my portfolio</h1>
+                    <h1 className='welcome-msg' id='welcome-msg'>Welcome to my portfolio</h1>
                 </Row>
                 <Row  className='intro-text pt-3'>
-                    <h1>Hi I am <h1 className='hero-name'>Muhammad Naayif</h1></h1>
+                    <h1>Hi I am </h1><h2 className='hero-name'>Muhammad Naayif</h2>
                 </Row>
                 <Row className='description-section'>
                     {!open ? <p className={!open ? 'visible' : 'invisible'}> A full-stack developer with a knack for crafting innovative solutions and a love for coding . . .<br/><a onClick={toggleReadMore} className='read-more-btn'>read more</a></p> : 
@@ -33,7 +52,7 @@ const toggleReadMore = ()=>{
                 </Col>
                 <Col lg={4} className='bannerImage my-5' >
                     <div className="image-container">
-                    <Image src={heroImage}/>
+                    <Image src={heroImage} fluid/>
                     </div>
                 </Col>
             </Row>
