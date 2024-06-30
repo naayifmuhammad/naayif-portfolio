@@ -9,7 +9,6 @@ const Projects = () => {
   const [windowSize, setWindowSize] = useState(window.innerWidth);
 
   useEffect(() => {
-    console.log(isMobile)
     const handleResize = () => {
       setWindowSize(window.innerWidth);
     };
