@@ -19,9 +19,11 @@ export const Popup = (props) => {
   useEffect(()=>{
 
     document.addEventListener('mousedown', handleClickOutside);
+    document.body.style.overflow = 'hidden';
 
     return () =>{
         document.removeEventListener('mousedown',handleClickOutside);
+        document.body.style.overflow = 'auto';
     }
 
   },[]);
@@ -47,8 +49,9 @@ export const Popup = (props) => {
   };
 
   return (
-   <div className="popup-container d-flex justify-content-center align-items-center">
-     <form ref={popUpRef} onSubmit={sendEmail} className="contact-form col-4">
+   <div className="popup-container d-flex justify-content-center align-items-center col-12">
+    <form ref={popUpRef} onSubmit={sendEmail} className="contact-form col-lg-4 ">
+    <a className='popup-close-btn' onClick={props.handlePopup}> &times;</a>
     <label>Name</label>
     <input type="text" name="user_name" />
     <label>Email</label>

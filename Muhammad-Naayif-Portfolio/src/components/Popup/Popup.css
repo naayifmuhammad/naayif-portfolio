@@ -2,6 +2,7 @@
 
 .popup-container{
     position: absolute;
+    background-color: rgba(0, 0, 0, 0.642);
     top: 0;
     left: 0;
     width: 100vw;
@@ -9,6 +10,14 @@
     z-index: 1000;
 }
 
+.popup-container .popup-close-btn{
+    text-decoration: none;
+    color: grey;
+    cursor: pointer;
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+}
 .popup-container .status-msg{
     text-align: center;
 }
