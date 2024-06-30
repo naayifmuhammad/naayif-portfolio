@@ -2,7 +2,7 @@
 
 
 .skills-section{
-    background-color: var(--secondary-section-background-color);
+    /* background-color: var(--secondary-section-background-color); */
     color: white;
     cursor: pointer;
 }

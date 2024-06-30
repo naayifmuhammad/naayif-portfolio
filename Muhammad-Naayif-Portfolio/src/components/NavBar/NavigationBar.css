@@ -58,7 +58,12 @@
     background-color: white !important;
 }
 
-.connect-btn{
+.nav-link-list .connect-btn{
     color: var(--text-secondary) !important;
     border: 1px solid white !important;
+}
+
+.nav-link-list .connect-btn:hover{
+    color:black !important;
+    background-color: white;
 }

@@ -1,4 +1,6 @@
 body{
-    background-color: rgb(33, 33, 33) !important;
+    /* background-color: rgb(33, 33, 33) !important; */
+    background: linear-gradient(109.6deg, rgb(28, 1, 59) 13.4%, rgb(81, 2, 36) 100.2%);
+
     
 }

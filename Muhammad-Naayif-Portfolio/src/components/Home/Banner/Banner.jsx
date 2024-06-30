@@ -8,24 +8,24 @@ import heroImage from '../../../assets/profile/cover.png'
 
 const Banner = (props) => {
 
-const desktopFontSize = 150 + "px";
-const mobileFontsize = 100 + "px";
 const [windowSize, setWindowSize] = useState(window.innerWidth)
+  
 
 useEffect(()=>{
     
     const handleResize = () => {
         setWindowSize(window.innerWidth)
-        document.getElementById('welcome-msg').style.fontSize = windowSize > 500 ? desktopFontSize : mobileFontsize
-        console.log("here")
+        let fontsize = windowSize > 576 ? 150 + "px" : 100 + "px" ;
+        document.getElementById('welcome-msg').style.fontSize = fontsize
     }
 
     window.addEventListener('resize', handleResize);
+    handleResize()
       
     return () => {
         window.removeEventListener('resize',handleResize)
     } 
-},[windowSize])
+})
 
 const [open, setOpen] = useState(false)
 
