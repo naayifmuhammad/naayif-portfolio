@@ -51,7 +51,10 @@ export const Popup = (props) => {
   return (
    <div className="popup-container d-flex justify-content-center align-items-center col-12">
     <form ref={popUpRef} onSubmit={sendEmail} className="contact-form col-lg-4 py-2 pb-5 ">
-    <a className='popup-close-btn pb-5' onClick={props.handlePopup}> &times;</a>
+    <div className="close-button-container d-flex flex-row-reverse">
+      <a className='popup-close-btn mb-5 px-2 pb-1' onClick={props.handlePopup}> &times;</a>
+    </div>
+    
     <h1 className="contact-form-header pb-3">What can I help you with?</h1>
     {/* <label className='form-label-dark' >Name</label> */}
     <input className='form-field-dark' placeholder='Name'  type="text" name="user_name" />
