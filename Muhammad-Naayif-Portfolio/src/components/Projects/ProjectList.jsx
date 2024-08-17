@@ -31,6 +31,33 @@ const projects = [
     ],
   },
 
+  
+  {
+    projectTitle: "Hover Racing",
+    points: [
+      <li>
+        <i className="fa fa-gamepad"></i> Advanced Hover Car Physics
+      </li>,
+      <li>
+        <i className="fa fa-network-wired"></i> Multiplayer Synchronization
+      </li>,
+      <li>
+        <i className="fa fa-cogs"></i> Unity Framework Integration
+      </li>,
+      <li>
+        <i className="fa fa-server"></i> Dedicated .NET Server
+      </li>
+    ],
+
+    projectDescription:
+      "LocalShop Connect is a powerful desktop application suite tailored to the needs of local shops. It streamlines essential business operations, such as billing and inventory management, while integrating with e-commerce platforms to expand sales opportunities.",
+      imageUrls: [
+      "/project-images/hovercar/1.jpg",
+      "/project-images/hovercar/2.jpg",
+      "/project-images/hovercar/3.jpg",
+      "/project-images/hovercar/4.jpg",
+    ],
+  },
   {
     projectTitle: "LocalShop Connect",
     points: [
@@ -55,33 +82,6 @@ const projects = [
       "/project-images/localshopconnect/3.png",
       "/project-images/localshopconnect/4.png",
       "/project-images/localshopconnect/5.png",
-    ],
-  },
-
-  {
-    projectTitle: "Hover Racing",
-    points: [
-      <li>
-        <i className="fa fa-gamepad"></i> Advanced Hover Car Physics
-      </li>,
-      <li>
-        <i className="fa fa-network-wired"></i> Multiplayer Synchronization
-      </li>,
-      <li>
-        <i className="fa fa-cogs"></i> Unity Framework Integration
-      </li>,
-      <li>
-        <i className="fa fa-server"></i> Dedicated .NET Server
-      </li>
-    ],
-
-    projectDescription:
-      "LocalShop Connect is a powerful desktop application suite tailored to the needs of local shops. It streamlines essential business operations, such as billing and inventory management, while integrating with e-commerce platforms to expand sales opportunities.",
-    imageUrls: [
-      "/project-images/hovercar/1.jpg",
-      "/project-images/hovercar/2.jpg",
-      "/project-images/hovercar/3.jpg",
-      "/project-images/hovercar/4.jpg",
     ],
   },
 ];

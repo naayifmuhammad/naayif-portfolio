@@ -2,36 +2,19 @@
     background-color: transparent;
 }
 .slideshow-container .slide .custom-image-class{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position:center;
-    border-radius: 3px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position:center;
+  border-radius: 3px;
+  filter: drop-shadow(0px 0px 10px #0ff);
+  box-shadow: 0px 0px 20px #0ff;
 }
 
-.neon-border {
-    position: relative;
-    padding: 10px; /* Adjust as needed */
-    border-radius: 8px; /* Adjust as needed */
-    overflow: hidden;
-  }
-  
-  .neon-border::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: inherit;
-    background: linear-gradient(45deg, #d6006b, #00a6ff); /* Neon pink to neon blue gradient */
-    opacity: 0.6; /* Adjust the opacity for the desired intensity */
-    z-index: -1;
-    filter: blur(8px); /* Creates the neon glow effect */
-    transform: scale(1.2); /* Slightly scale up to ensure the glow is around the border */
-  }
-  
-  .neon-border-content {
-    position: relative;
-    z-index: 1; /* Ensure content is above the neon glow */
-  }
+
+.slideshow-container .slide .custom-image-class:hover{
+  transform: scale(105%);
+  transform: translateY(-10px);
+  transition: all .5s ease-in-out;
+
+}
