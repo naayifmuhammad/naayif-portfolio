@@ -21,6 +21,9 @@ const Project = (props) => {
                 <p className="project-description">
                   {props.projectDescription}
                 </p>
+                <ul>
+                  {props.points}
+                </ul>
               </Row>
             </Col>
 
@@ -62,6 +65,9 @@ const Project = (props) => {
                 <p className="project-description">
                   {props.projectDescription}
                 </p>
+                <ul>
+                  {props.points}
+                </ul>
               </Row>
             </Col>
 

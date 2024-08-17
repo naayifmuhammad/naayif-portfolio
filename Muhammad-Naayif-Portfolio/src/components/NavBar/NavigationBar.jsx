@@ -29,7 +29,6 @@ function NavigationBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto nav-link-list px-1">
             <Nav.Link href="/">Home</Nav.Link>
-            {/* <Nav.Link href="#skills">Skills</Nav.Link> */}
             <Nav.Link href="/projects">Projects</Nav.Link>
             <Nav.Link href="https://github.com/naayifmuhammad" target='_blank'><i className="bi bi-github"></i>{!expanded ? " Github " : ""}</Nav.Link>
             <Nav.Link href="https://www.linkedin.com/in/naayifmuhammad/" target='_blank'><i className="bi bi-linkedin"></i>{!expanded ? " LinkedIn " : ""}</Nav.Link>

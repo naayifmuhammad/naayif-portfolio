@@ -52,7 +52,7 @@ const Skills = () => {
   };
 
   return (
-    <section className="skills-section py-3 col-12" id="skills">
+    <section className="fade-in-element skills-section py-3 col-12" id="skills">
       <Row className="skills-header-container">
         <h1 className="section-header-skills">Skills</h1>
       </Row>

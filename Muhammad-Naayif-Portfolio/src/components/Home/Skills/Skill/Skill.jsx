@@ -5,7 +5,7 @@ const Skill = (props) => {
   return (
     <div className="skill-container d-flex flex-column align-items-center justify-content-center my-5">
         <Row className={!props.badge ? 'round-image-container' : 'round-image-container badge-light'}>
-          <Image src={props.skillIcon} fluid/>
+          <Image src={props.skillIcon} className='skill-image' fluid/>
         </Row>
         <Row>
             <h1 className="skill-title pt-3">{props.skillTitle}</h1>            

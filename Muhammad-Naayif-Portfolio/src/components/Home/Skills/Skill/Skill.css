@@ -16,3 +16,10 @@
     background-color: rgb(255, 255, 255);
     border-radius: 20%;
 }
+.skill-container .round-image-container .skill-image:hover{
+    transform: translateY(-10px);
+    transform: scale(110%,110%);
+    filter: drop-shadow(0px 0px 20px #0ff);
+    transition: all 0.25s ease-in-out;
+
+}

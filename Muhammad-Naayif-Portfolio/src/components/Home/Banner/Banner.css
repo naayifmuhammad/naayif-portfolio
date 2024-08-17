@@ -46,3 +46,19 @@
 .invisible{
     color: transparent !important;
 }
+
+.floating-image {
+    animation: float 10s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Move the image up */
+    }
+    100% {
+        transform: translateY(0); /* Move the image back to original position */
+    }
+}

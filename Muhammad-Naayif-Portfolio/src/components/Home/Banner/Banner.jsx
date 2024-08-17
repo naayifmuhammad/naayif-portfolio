@@ -34,7 +34,7 @@ const toggleReadMore = ()=>{
 };
 
   return (
-    <section id="banner" className='banner-section col-12'>
+    <section id="banner" className='fade-in-element banner-section col-12'>
         <Container>
             <Row className='align-items-center'>
                 <Col xl={7} className='bannerText' >
@@ -52,7 +52,7 @@ const toggleReadMore = ()=>{
                 </Col>
                 <Col lg={4} className='bannerImage my-5' >
                     <div className="image-container">
-                    <Image src={heroImage} fluid/>
+                    <Image src={heroImage} fluid className='floating-image'/>
                     </div>
                 </Col>
             </Row>

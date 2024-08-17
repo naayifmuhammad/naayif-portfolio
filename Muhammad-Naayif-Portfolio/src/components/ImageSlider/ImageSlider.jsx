@@ -23,11 +23,11 @@ const ImageSlider = ({ imageUrls, transitionSpeed }) => {
 
   return (
     <div className="slideshow-container">
-      <div className="slide">
+      <div className="slide neon-border">
       <Image
           src={imageUrls[currentSlide]}
           alt={`Slide ${currentSlide}`}
-          className="custom-image-class"
+          className="custom-image-class neon-border-content"
           fluid
         />
       </div>

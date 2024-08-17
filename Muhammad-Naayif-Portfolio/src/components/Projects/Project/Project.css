@@ -6,18 +6,11 @@
     color: var(--text-primary);
 }
 
-.secondary{
-    background-color: var(--primary-section-background-color);
-}
-
 
 .project-details .project-title-container .project-title{
     text-transform: capitalize;
-    background-color: rgba(255, 255, 255, 0.182);
     color: rgb(255, 255, 255);
     font-weight: bold;
-    border-radius: 5px;
-    
 }
 .project-details .project-text-container{
     height: 100%;

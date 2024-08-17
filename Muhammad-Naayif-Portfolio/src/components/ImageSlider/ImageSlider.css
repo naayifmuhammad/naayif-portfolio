@@ -3,6 +3,35 @@
 }
 .slideshow-container .slide .custom-image-class{
     width: 100%;
-    height: auto;
-    border-radius: 5px;
+    height: 100%;
+    object-fit: contain;
+    object-position:center;
+    border-radius: 3px;
 }
+
+.neon-border {
+    position: relative;
+    padding: 10px; /* Adjust as needed */
+    border-radius: 8px; /* Adjust as needed */
+    overflow: hidden;
+  }
+  
+  .neon-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(45deg, #d6006b, #00a6ff); /* Neon pink to neon blue gradient */
+    opacity: 0.6; /* Adjust the opacity for the desired intensity */
+    z-index: -1;
+    filter: blur(8px); /* Creates the neon glow effect */
+    transform: scale(1.2); /* Slightly scale up to ensure the glow is around the border */
+  }
+  
+  .neon-border-content {
+    position: relative;
+    z-index: 1; /* Ensure content is above the neon glow */
+  }
