@@ -56,6 +56,11 @@ const Projects = () => {
                   className="projects-showcase-intro"
                   fluid
                 />
+                <div className="dots">
+                  <div className="dot"></div>
+                  <div className="dot"></div>
+                  <div className="dot"></div>
+                </div>
               </div>
             </Row>
           </div>

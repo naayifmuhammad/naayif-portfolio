@@ -15,11 +15,32 @@
     font-size: 40px;
     padding-bottom: 10px;
 }
+
+.intro-image-container{
+    display: flex;
+    flex-direction: column;
+}
+
 .projects-section .projects-header-container .projects-showcase-intro{
     width: 100%;
     height: 100%;
     object-fit: contain;
     object-position: center;
+}
+
+.dots{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+
+}
+.dot{
+    background-color: white;
+    width: 10px;
+    border-radius: 50%;
+    height: 10px;
 }
 
 .header-container ul{
